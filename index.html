@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8" />
+    <title>Portfolio</title>
+    <script>
+        // JAVASCRIPT FUNCTIONS // 
+        function onclicked1() {
+            document.querySelector('.B1').classList.add("btn-clicked");
+            setTimeout(() => {
+                document.querySelector('.B1').classList.remove("btn-clicked");
+            }, 1000);
+        }
+        function onclicked2() {
+            document.querySelector('.B2').classList.add("btn-clicked");
+            setTimeout(() => {
+                document.querySelector('.B2').classList.remove("btn-clicked");
+            }, 1000);
+        }
+        function onclicked3() {
+            document.querySelector('.B3').classList.add("btn-clicked");
+            setTimeout(() => {
+                document.querySelector('.B3').classList.remove("btn-clicked");
+            }, 1000);
+        }
+        function onclicked4() {
+            document.querySelector('.B4').classList.add("btn-clicked");
+            setTimeout(() => {
+                document.querySelector('.B4').classList.remove("btn-clicked");
+            }, 1000);
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Header -->
+    <a id="top"></a>
+    <div id="header">
+        <div class="container-header">
+            <h1>COLE MCDONALD<br>PORTFOLIO</h1>
+            <h3>Animation • Concept Art • 3D Art</h3>
+        </div>
+    </div>
+
+    <!-- Pages -->
+    <div class="container-pages">
+        <div id="pages" class="nav-container">
+            <a href="index.html">Portfolio</a>
+            <a href="aboutme.html">About</a>
+            <a href="contactme.html">Contact</a>
+        </div>
+    </div>
+    <hr class="new1">
+    <br><br><br>
+
+    <!-- Sections Buttons -->
+    <div class="sect-container">
+        <a href="#animation"><button id="sections-btn" class="B1" onclick="onclicked1()"><b>Animation</b></button></a>
+        <a href="#concept"><button id="sections-btn" class="B2" onclick="onclicked2()"><b>Concept Art</b></button></a>
+        <a href="#3dart"><button id="sections-btn" class="B3" onclick="onclicked3()"><b>3D Art</b></button></a>
+        <a href="#top"><button id="sections-btn" class="B4" onclick="onclicked4()"><b>Back to Top</b></button></a>
+    </div>
+
+    <div class="center">
+
+    </div>
+
+    <!-- Gallery for animation -->
+    <a id="animation"></a>
+    <div class="center">
+        <h2>ANIMATION</h2>
+        <hr class="new2">
+        <br>
+    </div>
+    <div class="container-gallery">
+        <video width="30%" controls>
+            <source src="Videos/FMP_Anim.mp4" type="video/mp4">
+            Your browser does not support the video format.
+        </video>
+        <video width="30%" controls>
+            <source src="Videos/Unit12_Anim.mp4" type="video/mp4">
+            Your browser does not support the video format.
+        </video>
+        <video width="30%" controls>
+            <source src="Videos/OneSuchMoment.mp4" type="video/mp4">
+            Your browser does not support the video format.
+        </video>
+    </div>
+    <br><br><br>
+
+    <!-- Gallery for concept art -->
+    <a id="concept"></a>
+    <div class="center">
+        <h2>CONCEPT & DESIGN</h2>
+        <hr class="new2">
+        <br>
+    </div>
+    <div class="container-gallery">
+        <a href="/Images/Naia_Concept.png" target="_blank"><img id="img" src="Images/Naia_Concept.png" width="20%" height="20%"></a>
+        <a href="/Images/genshin_oc.png" target="_blank"><img id="img" src="Images/genshin_oc.png" width="20%" height="20%"></a>
+        <a href="/Images/design_anim.png" target="_blank"><img id="img" src="Images/design_anim.png" width="20%" height="20%"></a>
+    </div>
+    <br><br><br>
+
+    <!-- Gallery for 3D art-->
+    <a id="3dart"></a>
+    <div class="center">
+        <h2>3D ART</h2>
+        <hr class="new2">
+        <br>
+    </div>
+    <div class="container-gallery">
+        <a href="Images/Bedroom_Model.png" target="_blank"><img src="Images/Bedroom_Model.png" alt="" width="50%"></a>
+        <a href="Videos/GarnetMicrowave.mp4" target="_blank"><img src="Images/Garnet_Frame1.png" alt="" width="50%"></a>
+    </div>
+    <br><br><br>
+
+</body>
+<br>
+<br>
+<br>
+<br>
+<hr class="new1">
+<!-- Footer -->
+<footer id="footer">
+    <p>
+        © Nicole McDonald 2022 <br>
+        All content and trademarks property of their respective owners. <br><br>
+        <a href="https://github.com/nicmc3"><img src="images/i_github.png" width="20px"
+                height="20px"></a>
+        <a href="https://www.linkedin.com/in/nicole-mcdonald33/"><img src="images/i_linked.png" width="20px"
+            height="20px"></a>
+    </p>
+</footer>
+
+</html>
